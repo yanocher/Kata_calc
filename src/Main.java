@@ -7,7 +7,7 @@ public class Main {
             Calculator calc = new Calculator();
             calc.calculate();
         } catch (RuntimeException e) {
-            System.out.println("throws Exception 0");
+            System.out.println("throws Exception");
         }
     }
     static class Calculator {
@@ -18,11 +18,7 @@ public class Main {
             int b = scanner.nextInt();
 
             if (a < 0 || a > 10 || b < 0 || b > 10) {
-                System.out.println("throws Exception 1");
-                System.exit(0);
-            }
-            if (a.length() > 5) {
-                System.out.println("throws Exception 1");
+                System.out.println("throws Exception");
                 System.exit(0);
             }
             if (operation.equals("+")) {
